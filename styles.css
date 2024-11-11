@@ -1,0 +1,62 @@
+<style>
+        .skip-link {
+    position: absolute;
+    left: -9999px; /* 隐藏链接 */
+}
+
+.skip-link:focus {
+    left: 10px; /* 当链接获得焦点时显示 */
+    top: 10px; /* 调整位置 */
+    background: yellow; /* 背景颜色 */
+    color: black; /* 字体颜色 */
+    padding: 8px; /* 内边距 */
+    z-index: 1000; /* 确保在其他元素之上 */
+}
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex; /* 使用Flexbox */
+    list-style-type: none; /* 去掉列表符号 */
+}
+
+nav li {
+    margin: 0 15px; /* 项目之间的间距 */
+}
+
+nav a {
+    color: white; /* 链接颜色 */
+    text-decoration: none; /* 去掉下划线 */
+    padding: 5px 10px; /* 内边距 */
+}
+
+nav a:hover {
+    background-color: #555; /* 悬停时背景颜色 */
+}
+img {
+    border: 5px solid #ccc; /* 边框 */
+    padding: 10px; /* 内边距 */
+    border-radius: 10px; /* 圆角 */
+    max-width: 100%; /* 确保图像不超出容器 */
+    height: auto; /* 保持纵横比 */
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 两列 */
+    gap: 10px; /* 列间距 */
+}
+nav {
+    display: flex; /* 使用Flexbox */
+    justify-content: space-between; /* 均匀分配空间 */
+    align-items: center; /* 垂直居中 */
+}
+nav a:hover {
+    background-color: #555; /* 悬停时背景颜色 */
+    transition: background-color 0.3s; /* 添加过渡效果 */
+}
+nav li:nth-child(2) {
+    font-weight: bold; /* 第二个导航项加粗 */
+}
+    </style>
